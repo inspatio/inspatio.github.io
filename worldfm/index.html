@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Generative Spatial Intelligence, Real-Time Interaction, Mobile Experience, Consumer GPU Deployment, InSpatio-WorldFM, Spatial Intelligence">
+    <meta name="description" content="InSpatio-WorldFM: An Open-Source Real-Time Generative Frame Model for Spatial Intelligence - Research Release">
+    <title>InSpatio-WorldFM: An Open-Source Real-Time Generative Frame Model for Spatial Intelligence</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-content">
+            <div class="nav-logo">InSpatio-WorldFM</div>
+        </div>
+    </nav>
+
+    <!-- Floating Theme Toggle -->
+    <button class="theme-toggle-floating" id="themeToggle" aria-label="Toggle theme">
+        <span>🌙</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>InSpatio-WorldFM: An Open-Source <span class="gradient-text">Real-Time Generative Frame Model</span> for Spatial Intelligence</h1>
+            <p class="hero-description">
+                We present <strong>InSpatio-WorldFM</strong>, a real-time generative frame model for spatial intelligence. It delivers efficient, multi-view consistent spatial reasoning and enables real-time interactive exploration. Our goal is to bring real-time spatial reasoning to consumer-grade GPUs, moving spatial intelligence from data centers to edge devices.
+            </p>
+            <p class="hero-description" style="font-size: 16px;">
+                We <strong>open-source the code</strong> for this project and provide an <strong>online demo</strong> for a live preview.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <a href="https://github.com/inspatio/worldfm" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    Code
+                </a>
+                <!-- <a href="https://huggingface.co/inspatio/worldfm" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    Weights
+                </a> -->
+                <a href="https://arxiv.org/abs/2603.11911" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                    arXiv
+                </a>
+                <a href="http://www.inspatio.com/worldfm" class="cta-button" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3"/>
+                    </svg>
+                    Demo
+                </a>
+            </div>
+
+            <!-- Hero Video -->
+            <div class="hero-video-container">
+                <div class="enhanced-video">
+                    <div class="video-wrapper">
+                        <video class="hero-video" src="static/videos/234552.mp4" autoplay preload="auto" controls loop muted playsinline></video>
+                        <div class="video-play-button">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <div class="quick-nav">
+        <div class="quick-nav-content">
+            <a href="#consistency" class="quick-nav-link">
+                <span class="quick-nav-number">1</span>
+                <span class="quick-nav-text">Consistency</span>
+            </a>
+            <a href="#efficiency" class="quick-nav-link">
+                <span class="quick-nav-number">2</span>
+                <span class="quick-nav-text">Efficiency</span>
+            </a>
+            <a href="#memory" class="quick-nav-link">
+                <span class="quick-nav-number">3</span>
+                <span class="quick-nav-text">Memory</span>
+            </a>
+            <a href="#possibilities" class="quick-nav-link">
+                <span class="quick-nav-number">4</span>
+                <span class="quick-nav-text">Applications</span>
+            </a>
+            <a href="#looking-ahead" class="quick-nav-link">
+                <span class="quick-nav-number">5</span>
+                <span class="quick-nav-text">Future</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Section 1: World Models vs 2D Models -->
+    <section class="section" id="consistency">
+        <div class="numbered-section reveal">
+            <div class="section-number">1</div>
+            <div class="section-content">
+                <span class="section-label">Multi-View Consistency</span>
+                <h2>3D World Models vs. 2D World Models: Consistency for Spatial Intelligence</h2>
+
+                <p>
+                    Unlike video generation models that learn purely in the 2D pixel space, the foundation of World Models is <strong>consistency</strong>. This means that generated content does not arbitrarily drift, change, or disappear over time. Such spatial hallucinations remain prevalent even in the most advanced video generation models today.
+                </p>
+
+                <p>
+                    We believe that purely 2D learning is insufficient to achieve spatial intelligence. And the most fundamental property of spatial intelligence is <strong>3D multi-view consistency</strong>.
+                </p>
+
+                <p>
+                    In InSpatio-WorldFM, multi-view consistency serves as the core constraint for content generation, both in precomputed spatial representations and during real-time inference. This ensures that the model learns and maintains a coherent understanding of 3D spatial structure, rather than modeling the world as a sequence of unconstrained 2D pixel changes. As a result, InSpatio-WorldFM achieves strong spatial coherence and persistent consistency.
+                </p>
+
+                <div class="media-container">
+                    <img class="zoomable-image" src="static/images/20260227-212957.jpg" alt="Multi-view Consistent Generation" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Efficiency -->
+    <section class="section" id="efficiency">
+        <div class="numbered-section reveal">
+            <div class="section-number">2</div>
+            <div class="section-content">
+                <span class="section-label">Performance</span>
+                <h2>Efficiency is the Key to Spatial Intelligence</h2>
+
+                <p>
+                    Recent large language models (LLMs) and video diffusion models（VDMs） trillions of tokens spanning vast amounts of human knowledge and visual experience. Yet even at this scale, they remain fundamentally limited in spatial understanding—the ability to perceive and reason about the structure and arrangement of the physical world.
+                </p>
+
+                <p>
+                    In contrast, <strong>spatial intelligence is remarkably efficient in biological systems</strong>. Even animals with very small brains naturally possess spatial intelligence, suggesting that spatial reasoning does not inherently require massive computational resources.
+                </p>
+
+                <div class="quote-box">
+                    <p class="quote-text">
+                        "InSpatio-WorldFM is built on the premise that spatial intelligence should be efficient and widely deployable. Our goal is to enable real-time spatial reasoning on consumer GPUs, bringing spatial intelligence from data centers to edge device. In practice, WorldFM can achieve interactive frame rates on a single RTX 4090."
+                    </p>
+                </div>
+
+                <p>
+                    We achieve this through a frame-based architecture, combined with model distillation and inference optimization. We believe <strong>real-time interaction is central to spatial intelligence</strong>. Reducing computational requirements and model size is therefore a critical step toward making World Models practical, scalable, and deployable across a wide range of real-world systems.
+                </p>
+
+                <div class="enhanced-video">
+                    <div class="video-wrapper">
+                        <video src="static/videos/001425.mp4" preload="auto" controls loop muted playsinline autoplay></video>
+                        <div class="video-play-button">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                        <div class="video-controls">
+                            <button class="control-btn play-pause-btn">
+                                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                            <div class="progress-bar">
+                                <div class="progress-filled"></div>
+                            </div>
+                            <button class="control-btn fullscreen-btn">
+                                <svg viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video-caption">High-Efficiency Low-Latency Real-Time Interaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Spatial Memory -->
+    <section class="section" id="memory">
+        <div class="numbered-section reveal">
+            <div class="section-number">3</div>
+            <div class="section-content">
+                <span class="section-label">Memory Architecture</span>
+                <h2>Explicit Anchors vs. Implicit Memory: Spatial Memory in Spatial Intelligence</h2>
+
+                <p>
+                    A defining property of spatial intelligence is <strong>persistent memory</strong>. If a robot forgets the layout of a warehouse or the location of objects the moment it turns its head, true autonomy is impossible.
+                </p>
+
+                <p>
+                    In InSpatio-WorldFM, we implement spatial memory through a <strong>hybrid design</strong> that combines explicit anchors with implicit neural memory. We use feedforward reconstruction as explicit spatial anchors, while reference frames serve as implicit memory within the neural model.
+                </p>
+
+                <div class="content-card">
+                    <h3>Explicit 3D Anchoring</h3>
+                    <p>
+                        We argue that explicit 3D anchoring provides a critical inductive structure for spatial intelligence. Rather than relying solely on implicit neural representations, explicit anchors enable stable, efficient, and scalable spatial reasoning across viewpoints and over time.
+                    </p>
+                </div>
+
+                <div class="enhanced-video" style="margin-top: 24px;">
+                    <div class="video-wrapper">
+                        <video src="static/videos/Screencast3.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                        <div class="video-play-button">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="video-caption">Ultra-Long Inference Without Content Degradation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Infinite Possibilities -->
+    <section class="section" id="possibilities">
+        <div class="numbered-section reveal">
+            <div class="section-number">4</div>
+            <div class="section-content">
+                <span class="section-label">Applications</span>
+                <h2>Infinite Possibilities Enabled by Spatial Intelligence</h2>
+
+                <!-- Possibilities Grid -->
+                <div class="possibilities-grid">
+                    <!-- 1. From 2D Images to 3D Worlds: Real-Time Interactive Exploration -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">1</div>
+                        <div class="possibility-content">
+                            <h4><span class="possibility-emoji">📷</span> From 2D Images to 3D Worlds: Real-Time Interactive Exploration</h4>
+                            <p>With just a single photo, you can immerse yourself and explore places you have never visited.</p>
+                            <div class="video-showcase">
+                              <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/233213.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Consistent Spatial Editing -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">2</div>
+                        <div class="possibility-content">
+                            <h4><span class="possibility-emoji">✏️</span> Consistent Spatial Editing</h4>
+                            <p>With just a textual description, you can generate customized environments with your desired style.</p>
+
+                            <div class="video-showcase">
+                          
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/232700.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Game-Style Interaction -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">3</div>
+                        <div class="possibility-content">
+                            <h4><span class="possibility-emoji">🎮</span> Game-Style Interaction</h4>
+                            <p>With no installation required, you can instantly enter and experience worlds in any game style.</p>
+                            <div class="video-showcase">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/mariao_more.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="video-caption">Game World 1</div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/sea_more2.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="video-caption">Game World 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Embodied Intelligence -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">4</div>
+                        <div class="possibility-content">
+                            <h4><span class="possibility-emoji">🤖</span> Embodied Intelligence</h4>
+                            <p>Without expensive data collection, embodied intelligence gains access to infinitely generated, customizable spatial environments.</p>
+                            <div class="video-showcase three-videos">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/Screencast1.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="video-caption">Room Scene</div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/factory.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="video-caption">Factory Environment 1</div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/Screencast2.mp4" autoplay controls preload="auto" loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                    <div class="video-caption">Factory Environment 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Looking Ahead -->
+    <section class="section" id="looking-ahead">
+        <div class="numbered-section reveal">
+            <div class="section-number">5</div>
+            <div class="section-content">
+                <span class="section-label">Future</span>
+                <h2>Looking Ahead</h2>
+
+                <p>
+                    InSpatio-WorldFM introduces an efficient real-time spatial intelligence model that runs on modest computational resources, and we are releasing its technical details to support open research and development.
+                </p>
+
+                <p>
+                    At the same time, we are <strong>extending the model to support real-time interaction with dynamic worlds</strong>. These capabilities will be made available in the near future.
+                </p>
+
+                <div class="quote-box">
+                    <p class="quote-text">
+                        "We believe efficient spatial intelligence will become a foundational capability across generative models, embodied agents, and real-world systems. If you are excited about this future, we invite you to build it with us."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>

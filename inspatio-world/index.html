@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="InSpatio-World, 4D World Model, Spatial Intelligence, Real-Time Interaction, Video to World, Time Travel, State-Anchored World Modeling">
+    <meta name="description" content="InSpatio-World: The world's first reference-video-based real-time interactive 4D world model. Turn any video into a dynamic explorable world.">
+    <title>InSpatio-World — Beyond the Frame. Into the World.</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-content">
+            <div class="nav-logo">InSpatio-World</div>
+        </div>
+    </nav>
+
+    <!-- Floating Theme Toggle -->
+    <button class="theme-toggle-floating" id="themeToggle" aria-label="Toggle theme">
+        <span>🌙</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>INSPATIO-WORLD —— <span class="gradient-text">Beyond the Frame. Into the World.</span></h1>
+            <div style="margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="enhanced-video">
+                    <div class="video-wrapper">
+                        <video src="static/videos/0319.mp4" poster="static/images/133_poster.jpg" preload="none" controls loop muted playsinline></video>
+                        <div class="video-play-button">
+                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+                <a href="https://github.com/inspatio/inspatio-world" target="_blank" class="cta-button">
+                    Code
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                    </svg>
+                </a>
+                <a href="https://www.inspatio.com/world/" target="_blank" class="cta-button" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); -webkit-text-fill-color: var(--text-primary);">
+                    Demo
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <div class="quick-nav">
+        <div class="quick-nav-content">
+            <a href="#section1" class="quick-nav-link">
+                <span class="quick-nav-number">01</span>
+                <span class="quick-nav-text">Capabilities</span>
+            </a>
+            <a href="#section2" class="quick-nav-link">
+                <span class="quick-nav-number">02</span>
+                <span class="quick-nav-text">Method</span>
+            </a>
+            <a href="#section3" class="quick-nav-link">
+                <span class="quick-nav-number">03</span>
+                <span class="quick-nav-text">Evaluation</span>
+            </a>
+            <a href="#section4" class="quick-nav-link">
+                <span class="quick-nav-number">04</span>
+                <span class="quick-nav-text">Applications</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Intro Description -->
+    <section class="section intro-description" id="intro">
+        <div class="reveal">
+            <div class="quote-box" style="padding: 20px 32px;">
+                <p style="font-size: 18px; font-weight: 400; font-style: italic; margin-bottom: 0; line-height: 1.3;">Turn any video into a dynamic 4D world</p>
+            </div>
+            <div style="margin-top: 24px;">
+                <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+                    <strong style="color: var(--text-primary);">InSpatio-World</strong> is the first 4D world model that is conditioned on reference videos, transforming a single video into a dynamic world you can freely explore, navigate, and revisit.
+                </p>
+                <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 0;">Since the physical world is inherently three-dimensional and continuously evolving, existing 2D or static models fail to capture its true spatial relationships and causal motions. InSpatio-World overcomes these limitations, enabling an immersive experience in a world that evolves over time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Capabilities -->
+    <section class="section" id="section1">
+        <div class="numbered-section reveal">
+            <div class="section-number">1</div>
+            <div class="section-content">
+                <h2>Capabilities</h2>
+
+                <div class="quote-box" style="padding: 20px 32px;">
+                    <p class="quote-text" style="font-size: 18px; margin-bottom: 0; font-style: italic;">Heraclitus said, "No man ever steps in the same river twice." We built a world where you can.</p>
+                </div>
+
+                <p>While traditional media offers only a fixed perspective, the real world flows through a continuous evolution of space and time. InSpatio-World transforms static images into immersive, navigable realities, granting you the agency to explore every dimension and moment with unprecedented freedom.</p>
+
+                <!-- Capability 1: Free Spatial Roaming -->
+                <div class="possibilities-grid" style="margin-top: 32px;">
+                    <div class="possibility-item">
+                        <div class="possibility-number">1</div>
+                        <div class="possibility-content">
+                            <h3>Free Spatial Roaming</h3>
+                            <p>Immerse yourself in the scene and experience the same event from diverse vantage points.</p>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                                               <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/13-pred_video_rank5.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                      <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/133653.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/1-overlay_video_rank1.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                 
+                                
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Capability 2: Temporal Control -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">2</div>
+                        <div class="possibility-content">
+                            <h3>Temporal Control</h3>
+                            <p>Pause, slow down, or even reverse time to re-experience captured moments.</p>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/5e814706_60deg.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/11b51aeb_rewind.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Capability 3: Authentic Physics -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">3</div>
+                        <div class="possibility-content">
+                            <h3>Physical Realism</h3>
+                            <p>Drawing from the natural dynamics of the reference video, we preserve physically consistent and realistic dynamics.</p>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                     
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0314_24k_prompt_zh.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output10.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Capability 4: Long-Horizon Stability -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">4</div>
+                        <div class="possibility-content">
+                            <h3>Long-Horizon Stability</h3>
+                            <p>Even under extended exploration, the world remains anchored to the reference video, preventing drift and preserving consistency with the source scene.</p>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output4.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/reference.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output3.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Method -->
+    <section class="section" id="section2">
+        <div class="numbered-section reveal">
+            <div class="section-number">2</div>
+            <div class="section-content">
+                <h2>Method</h2>
+
+                <div class="quote-box" style="padding: 20px 32px;">
+                    <p style="font-style: italic; margin-bottom: 0;">The physical world evolves continuously under fundamental laws.</p>
+                </div>
+
+                <p>For intelligent agents, merely processing pixels is insufficient; true understanding requires the ability to predict how the world state unfolds over time.</p>
+
+                <p>To achieve this, a world model should be built upon three pillars:</p>
+
+                <div class="possibilities-grid" style="margin-top: 20px; gap: 16px;">
+                    <div class="possibility-item">
+                        <div class="possibility-number">1</div>
+                        <div class="possibility-content">
+                            <h3>Physical Constancy:</h3>
+                            <p>Laws of physics—such as gravity, collisions, and inertia—must be applied consistently so that every interaction follows authentic dynamics.</p>
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-number">2</div>
+                        <div class="possibility-content">
+                            <h3>Spatial Persistence:</h3>
+                            <p>Objects and environments must exist stably in 3D space. Their physical properties and positions should remain consistent even when they temporarily leave the field of view.</p>
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-number">3</div>
+                        <div class="possibility-content">
+                            <h3>Temporal Causality:</h3>
+                            <p>The world state must evolve based on causal logic rather than mere visual continuity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 32px;">Existing generative models simulate pixels rather than persistent worlds. This leads to three fundamental limitations: physical inconsistency (e.g., interpenetration or unsupported object floating), spatial fragility (objects outside the field of view become unstable or are not preserved), and temporal drift (world states degrade over long sequences).</p>
+
+                <p style="margin-top: 24px;">To overcome these limitations, we introduce <strong>State-Anchored World Modeling</strong>, representing the world as a viewpoint-independent <strong>Local World State</strong> anchored to a reference video. Rather than generating frames independently, the model maintains and evolves the full world state over time.</p>
+
+                <div class="media-container" style="margin-top: 32px;">
+                    <img src="static/images/image.png" alt="State-Anchored World Modeling" loading="lazy" style="width: 100%; height: auto; display: block;">
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-top: 12px; padding: 0 16px; line-height: 1.6;">Existing stateless methods lack persistent world states, making it difficult to model physical and spatial consistency. An ideal world model should maintain a self-evolving state from which observations can be sampled consistently across space and time. InSpatio-World addresses this by anchoring a local world state, enabling spatiotemporally consistent sampling and mitigating long-term drift, taking a key step toward this goal.</p>
+                </div>
+
+                <p style="margin-top: 24px;"><strong>This is achieved through three novel components:</strong></p>
+
+                <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 6px; margin-top: 0;">World State Anchoring</h3>
+                        <p style="margin-bottom: 0; font-size: 15px;">— Constructs a persistent world state to ensure spatial persistence and physical constancy.</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 6px; margin-top: 0;">Spatiotemporal Autoregression</h3>
+                        <p style="margin-bottom: 0; font-size: 15px;">— Performs precise spatiotemporal sampling conditioned on the reference video, enabling free navigation across viewpoints and temporal progression.</p>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 6px; margin-top: 0;">Joint Distribution Matching Distillation</h3>
+                        <p style="margin-bottom: 0; font-size: 15px;">— Learns a joint distribution that balances real-world fidelity and synthetic controllability, enabling stable generalization under user interaction.</p>
+                    </div>
+                </div>
+
+                <div class="media-container" style="margin-top: 32px;">
+                    <img src="static/images/image(1).png" alt="Spatiotemporal Autoregression Pipeline" loading="lazy" style="width: 100%; height: auto; display: block;">
+                    <p style="font-size: 13px; color: var(--text-secondary); margin-top: 12px; padding: 0 16px; line-height: 1.6;">The reference video is anchored as a local world state to provide a consistent physical baseline. Through spatiotemporal autoregression, the model ensures all generated observations remain grounded in this state, achieving robust spatiotemporal consistency.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Evaluation -->
+    <section class="section" id="section3">
+        <div class="numbered-section reveal">
+            <div class="section-number">3</div>
+            <div class="section-content" style="max-width: 100%;">
+                <h2>Evaluation</h2>
+
+                <p>
+                    To systematically evaluate generative world models, we conducted experiments using the WorldScore benchmark. This benchmark provides a unified framework to assess 3D, 4D, and video generation systems in terms of controllability, visual quality, and dynamic consistency, going beyond traditional static visual fidelity.
+                </p>
+
+                <p>
+                    Most existing approaches remain limited: they rely on static representations, lack explicit modeling of persistent World State, and follow offline generation pipelines that hinder real-time interaction and dynamic evolution.
+                </p>
+
+                <p>
+                    In contrast, InSpatio-World is designed for real-time, interactive world modeling, fully aligned with WorldScore’s dynamic evaluation criteria. Our 1.3B-parameter model ranks first among all real-time methods on the WorldScore-Dynamic leaderboard and runs at 24 FPS on a single GPU. This enables users to freely navigate spatial viewpoints alongside temporal progression—marking a fundamental shift from static video generation to a living, interactive world observation system.
+                </p>
+
+                <!-- <div class="media-container" style="margin-top: 32px;">
+                    <img src="static/images/img_v3_02vt_14729ffb-d026-4216-9e39-bf02ad085c0g.png" alt="Evaluation Chart" loading="lazy" style="width: 100%; height: auto; display: block;">
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Applications -->
+    <section class="section" id="section4">
+        <div class="numbered-section reveal">
+            <div class="section-number">4</div>
+            <div class="section-content">
+                <h2>Applications</h2>
+
+                <!-- Application 1: Embodied Intelligence -->
+                <div class="possibilities-grid" style="margin-top: 32px;">
+                    <div class="possibility-item">
+                        <div class="possibility-number">1</div>
+                        <div class="possibility-content">
+                            <h3>Embodied Intelligence</h3>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_9.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_1.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_8.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_10.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 2: Autonomous Driving -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">2</div>
+                        <div class="possibility-content">
+                            <h3>Autonomous Driving</h3>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_0.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_2.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_5.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_6.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0311_ar_14B_ema_grid9_7.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application 3: 4D Photo Album -->
+                    <div class="possibility-item">
+                        <div class="possibility-number">3</div>
+                        <div class="possibility-content">
+                            <h3>4D Photo Album</h3>
+                            <div class="carousel-wrapper">
+                            <div class="video-showcase" style="margin-top: 16px;">
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output3 (1).mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output7.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/output9.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0314_24k_prompt_zh (2).mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="enhanced-video">
+                                    <div class="video-wrapper">
+                                        <video src="static/videos/0-pred_with_target_overlay.mp4" preload="metadata" controls loop muted playsinline></video>
+                                        <div class="video-play-button">
+                                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <button class="carousel-arrow carousel-arrow-left hidden" aria-label="Previous">&#8249;</button>
+                            <button class="carousel-arrow carousel-arrow-right hidden" aria-label="Next">&#8250;</button>
+                            <div class="carousel-dots"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 48px;">Toward World Simulation</h3>
+                <p>Our long-term vision is to move beyond viewing sequences of frames — toward world simulation.</p>
+                <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 16px;">
+                    <div >
+                        <strong>Persistent Worlds</strong> The environment exists as a continuous state, evolving even without direct observation
+                    </div>
+                    <div >
+                        <strong>Causal Interaction</strong> Actions lead to physically grounded consequences, forming closed-loop dynamics
+                    </div>
+                    <div >
+                        <strong>Agent-Centric Learning</strong> These worlds become training grounds where agents acquire physical intuition and decision-making capabilities
+                    </div>
+                </div>
+
+                <div  style="margin-top: 40px;">
+                    <p >From simulating pixels to simulating worlds — InSpatio-World is a step toward systems that can understand, explore, and ultimately reshape reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
