@@ -165,19 +165,44 @@ body {
     }
 }
 
-.hero h1 {
-    font-size: clamp(32px, 5vw, 52px);
+.hero h1.hero-title {
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.2;
     margin-bottom: 24px;
+    text-align: center;
+}
+
+.hero-title-main {
+    display: block;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 900;
+    color: var(--text-primary);
     letter-spacing: -0.02em;
 }
 
-.hero h1 .gradient-text {
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.hero-title-sub {
+    display: block;
+    font-size: clamp(32px, 4.5vw, 54px);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--text-primary);
+    /* margin-top: 2px; */
+    letter-spacing: 0;
+}
+
+.hero-title-third {
+    display: block;
+    font-size: clamp(20px, 2.5vw, 38px);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--text-primary);
+    /* margin-top: 0; */
+    letter-spacing: 0;
+}
+
+.hero-title-accent {
+    font-weight: 700;
+    color: var(--text-primary);
 }
 
 .hero-description {
