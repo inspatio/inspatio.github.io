@@ -193,33 +193,45 @@ body {
     font-weight: 600;
 }
 
+.cta-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
 .cta-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background: var(--accent-gradient);
-    color: white;
+    background: transparent;
+    color: var(--accent-dark);
+    border: 1px solid var(--accent-dark);
     text-decoration: none;
     border-radius: 8px;
     font-weight: 500;
     font-size: 15px;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow-sm);
 }
 
 .cta-button:hover {
+    background: var(--accent-dark);
+    color: var(--bg-primary);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
 
 [data-theme="dark"] .cta-button {
-    background: linear-gradient(135deg, #4a4a4a 0%, #5a5a5a 100%);
-    border: 1px solid #666666;
+    color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 [data-theme="dark"] .cta-button:hover {
-    background: linear-gradient(135deg, #5a5a5a 0%, #6a6a6a 100%);
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
