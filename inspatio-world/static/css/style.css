@@ -260,6 +260,33 @@ body {
     box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
 }
 
+.cta-button--disabled {
+    color: var(--text-tertiary);
+    border-color: rgba(0, 0, 0, 0.12);
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+.cta-button--disabled:hover {
+    background: transparent;
+    color: var(--text-tertiary);
+    border-color: rgba(0, 0, 0, 0.12);
+    transform: none;
+    box-shadow: none;
+}
+
+[data-theme="dark"] .cta-button--disabled {
+    color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .cta-button--disabled:hover {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: none;
+}
+
 /* Quick Navigation */
 .quick-nav {
     position: fixed;
