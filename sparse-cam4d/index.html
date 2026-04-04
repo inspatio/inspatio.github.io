@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SparseCam4D enables high-quality 4D reconstruction from only 2-3 sparse cameras.">
+  <meta name="keywords" content="SparseCam4D, 4D Gaussian Splatting, Sparse View, Dynamic Scene Reconstruction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SparseCam4D: Spatio-Temporally Consistent 4D Reconstruction from Sparse Cameras</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><span class="publication-title-main">SparseCam4D</span><span class="publication-title-sub">Spatio-Temporally Consistent 4D Reconstruction from Sparse Cameras</span></h1>
+          <div class="is-size-3 publication-venue has-text-centered" style="margin-top:.5rem;">
+            CVPR 2026
+          </div>
+          <div class="is-size-5 publication-authors has-text-centered" style="margin-top:.75rem;">
+            <span class="author-block">Weihong Pan<sup>1,2*</sup> &nbsp;&nbsp; Xiaoyu Zhang<sup>2*</sup> &nbsp;&nbsp; Zhuang Zhang<sup>2</sup> &nbsp;&nbsp; Zhichao Ye<sup>2</sup> &nbsp;&nbsp; Nan Wang<sup>2</sup> &nbsp;&nbsp; Haomin Liu<sup>2</sup> &nbsp;&nbsp; Guofeng Zhang<sup>1,2†</sup></span>
+          </div>
+          <div class="is-size-5 publication-affiliation has-text-centered" style="margin-top:.35rem; color:#666;">
+            <sup>1</sup>State Key Lab of CAD&amp;CG, Zhejiang University &nbsp;&nbsp;&nbsp; <sup>2</sup>InSpatio Research<br><small><sup>*</sup>Equal contributions. &nbsp; <sup>†</sup>Corresponding author.</small>
+          </div>
+          <div class="has-text-centered" style="margin-top:1.5rem;">
+            <div class="publication-links link-block"
+                 style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:8px;">
+              <a href="https://arxiv.org/abs/2310.10642v1" class="external-link button is-normal is-rounded is-dark ">
+  <span class="icon"><i class="ai ai-arxiv"></i></span>
+  <span>arXiv</span>
+</a>
+              <a href="https://github.com/inspatio/sparse-cam4d" class="external-link button is-normal is-rounded is-dark ">
+  <span class="icon"><i class="fab fa-github"></i></span>
+  <span>Code</span>
+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="media-compare-shell">
+      <button class="compare-nav-btn compare-nav-prev" id="compare-prev" aria-label="Previous comparison">&#9664;</button>
+      <div class="media-compare-wrapper" id="media-compare" data-type="video">
+      <video class="compare-media compare-media-before" autoplay muted playsinline>
+        <source src="./static/videos/comparison/coffee_martini_RealTime4DGS.mp4" type="video/mp4">
+      </video>
+      <video class="compare-media compare-media-after" autoplay muted playsinline>
+        <source src="./static/videos/comparison/coffee_martini_ours.mp4" type="video/mp4">
+      </video>
+        <div class="compare-divider">
+          <div class="compare-handle">
+            <span class="compare-arrow">&#10094;</span>
+            <span class="compare-arrow">&#10095;</span>
+          </div>
+        </div>
+        <span class="compare-label compare-label-left" id="compare-label-left">Baseline</span>
+        <span class="compare-label compare-label-right" id="compare-label-right">Ours</span>
+      </div>
+      <button class="compare-nav-btn compare-nav-next" id="compare-next" aria-label="Next comparison">&#9654;</button>
+    </div>
+    <p class="has-text-centered media-compare-caption">Drag the divider to compare our method against baselines.</p>
+
+    <div class="compare-switcher">
+      <button class="button is-active" data-index="0">coffee_martini vs RealTime4DGS</button>
+      <button class="button" data-index="1">cook_spanish vs 4DGaussians</button>
+      <button class="button" data-index="2">coffee_martini vs MonoFusion</button>
+      <button class="button" data-index="3">flame_salmon vs MonoFusion</button>
+      <button class="button" data-index="4">birthday vs MonoFusion</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-five-sixths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+      <p>High-quality 4D reconstruction enables photorealistic and immersive rendering of the dynamic real world. However, unlike static scenes that can be fully captured with a single camera, high-quality dynamic scenes typically require dense arrays of tens or even hundreds of synchronized cameras. Dependence on such costly lab setups severely limits practical scalability. The reliance on such costly lab setups severely limits practical scalability. To this end, we propose a sparse-camera dynamic reconstruction framework that exploits abundant yet inconsistent generative observations. Our key innovation is the Spatio-Temporal Distortion Field, which provides a unified mechanism for modeling inconsistencies in generative observations across both spatial and temporal dimensions. Building on this, we develop a complete pipeline that enables 4D reconstruction from sparse and uncalibrated camera inputs. We evaluate our method on multi-camera dynamic scene benchmarks, achieving spatio-temporally consistent high-fidelity renderings and significantly outperforming existing approaches.</p>
+        </div>
+      <div class="abstract-figure">
+        <img src="./static/images/overview.png" alt="Overview figure">
+        <p class="abstract-figure-caption"><strong>Method overview.</strong> Given a generated frame at temporal index <em>t</em> and pose index <em>s</em>, each 4D Gaussian at <em>c</em>=(<em>x</em>,<em>y</em>,<em>z</em>) is projected onto the planes of the Spatio-Temporal Distortion Field to obtain deformation features, which are then decoded by a small MLP to produce the deformation values. We use separate photometric losses for real and generated frames, and additionally introduce regularization terms on pose, feature plane, and spatial smoothness to enhance optimization stability.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body" style="padding:1rem 0;">
+    <div class="container is-max-widescreen">
+      <div class="rsc-wrapper">
+        <button class="rsc-btn rsc-prev" aria-label="Previous">&#9664;</button>
+        <div class="rsc-viewport">
+          <div class="rsc-track">
+        <div class="rsc-item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/comparison/coffee_martini_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="rsc-item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/comparison/flame_salmon_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="rsc-item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/comparison/birthday_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="rsc-item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/comparison/playground_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="rsc-item">
+          <video autoplay controls muted loop playsinline>
+            <source src="./static/videos/comparison/cook_spanish_ours.mp4" type="video/mp4">
+          </video>
+        </div>
+          </div>
+        </div>
+        <button class="rsc-btn rsc-next" aria-label="Next">&#9654;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+      </div>
+    </div>
+    <div class="hero-body" style="padding-top:0;">
+      <div style="width:67%; margin:0 auto;">
+        <video id="teaser" autoplay controls loop playsinline style="width:100%; border-radius:10px;">
+          <source src="./static/videos/teaser.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <div class="bibtex-block">
+      <pre><code>@article{pan2026sparsecam4d,
+  title={SparseCam4D: Spatio-Temporally Consistent 4D Reconstruction from Sparse Cameras},
+  author={Pan, Weihong and Zhang, Xiaoyu and Zhang, Zhuang and Ye, Zhichao and Wang, Nan and Liu, Haomin and Zhang, Guofeng},
+  journal={arXiv preprint arXiv:2603.26481},
+  year={2026}
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This page is built using the
+        <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        project page template. The source code is available under the
+        <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="./static/js/index.js"></script>
+</body>
+</html>
