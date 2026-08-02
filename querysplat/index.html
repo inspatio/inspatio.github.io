@@ -249,49 +249,27 @@
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">QuerySplat: Decoupling Geometry and Appearance Representations in 3DGS prediction</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Yinglong Li<sup>*</sup>,</span>
-              <span class="author-block">Donghui Shen<sup>*</sup>,</span>
-              <span class="author-block">Xiaoyu Zhang,</span>
-              <span class="author-block">Zhichao Ye,</span>
-              <span class="author-block">Hongyu Wu,</span>
-              <span class="author-block">Aimin Hao,</span>
-              <span class="author-block">Guofeng Zhang,</span>
-              <span class="author-block">Haomin Liu</span>
+              <span class="author-block">Yinglong Li<sup>1,2*</sup>,</span>
+              <span class="author-block">Donghui Shen<sup>2*</sup>,</span>
+              <span class="author-block">Xiaoyu Zhang<sup>2</sup>,</span>
+              <span class="author-block">Zhichao Ye<sup>2</sup>,</span>
+              <span class="author-block">Hongyu Wu<sup>1&dagger;</sup>,</span>
+              <span class="author-block">Aimin Hao<sup>1</sup>,</span>
+              <span class="author-block">Guofeng Zhang<sup>2,3&dagger;</sup>,</span>
+              <span class="author-block">Haomin Liu<sup>2</sup></span>
             </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Beihang University, Zhejiang University, Inspatio<br>arXiv 2026</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup> State Key Laboratory of Virtual Reality Technology and Systems, Beihang University</span><br>
+                    <span class="author-block"><sup>2</sup> InSpatio Research</span>
+                    <span class="author-block"><sup>3</sup> State Key Lab of CAD&amp;CG, Zhejiang University</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup> Equal contributions. <sup>&dagger;</sup> Corresponding authors.</small></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/inspatio/querysplat" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -300,9 +278,18 @@
                   </a>
                 </span>
 
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://huggingface.co/inspatio/querysplat" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-cube"></i>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span>
+
+                <span class="link-block">
+                  <a href="#" aria-disabled="true" onclick="return false;"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -376,7 +363,7 @@
       <figure>
         <img src="static/images/overview.png" alt="Method overview diagram" loading="lazy">
         <figcaption class="has-text-justified mt-4">
-          <strong>Method Overview.</strong> A frozen Visial Geometric Model (VGM) encodes geometry-aware memory and defines cameras. Geometry queries decode spatial Gaussian parameters from VGM features, while Appearance queries read RGB/Pl&uuml;cker appearance memory to predict opacity and SH colors. The assembled Gaussians are trained by differentiable splatting in the VGM-defined coordinate system.
+          <strong>Method Overview.</strong> A Vision Geometric Model (VGM) encodes geometry-aware memory and defines cameras. Geometry queries decode spatial Gaussian parameters from VGM features, while appearance queries read RGB/Pl&uuml;cker memory to predict the others. The resulting Gaussians are supervised by differentiable splatting in the VGM-defined coordinate system.
         </figcaption>
       </figure>
     </div>
