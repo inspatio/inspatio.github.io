@@ -1,0 +1,4 @@
+.localview.log
+.localview.pid
+show_cases/
+**/__pycache__/**

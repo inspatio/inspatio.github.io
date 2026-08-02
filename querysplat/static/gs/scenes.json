@@ -1,0 +1,147 @@
+{
+  "scenes": [
+    {
+      "id": "02",
+      "label": "Scene 02",
+      "gif": "static/gs/02/render.gif",
+      "inputs": [
+        "static/gs/02/input_images/view0_01_5EEFEF0AABB3805150F102027B75607E_preprocessed.png",
+        "static/gs/02/input_images/view1_02_89B13B978E8313C5806570F1908CF9CD_preprocessed.png",
+        "static/gs/02/input_images/view2_03_58718B9CC02DF5C4255F2BD3ECFDDD39_preprocessed.png",
+        "static/gs/02/input_images/view3_04_179065CBC223A2DA6FEE9D4475014781_preprocessed.png",
+        "static/gs/02/input_images/view4_05_A2AC85FE31DD3936D4C40C916C0A1CD7_preprocessed.png",
+        "static/gs/02/input_images/view5_06_F2490CCE30C2CF8DEF24D1C7694D5BEC_preprocessed.png"
+      ],
+      "cameras": "static/gs/02/cameras.json",
+      "noTto": "static/gs/02/gaussians_no_tto.ply",
+      "tto": "static/gs/02/gaussians_tto50.ply",
+      "centroid": [
+        0.09727845616806409,
+        -0.039451228228119396,
+        1.140995752521401
+      ]
+    },
+    {
+      "id": "03",
+      "label": "Scene 03",
+      "gif": "static/gs/03/render.gif",
+      "inputs": [
+        "static/gs/03/input_images/view0_01_DSC04110_preprocessed.png",
+        "static/gs/03/input_images/view1_02_DSC04112_preprocessed.png",
+        "static/gs/03/input_images/view2_03_DSC04113_preprocessed.png",
+        "static/gs/03/input_images/view3_04_DSC04108_preprocessed.png",
+        "static/gs/03/input_images/view4_05_DSC04109_preprocessed.png"
+      ],
+      "cameras": "static/gs/03/cameras.json",
+      "noTto": "static/gs/03/gaussians_no_tto.ply",
+      "tto": "static/gs/03/gaussians_tto50.ply",
+      "centroid": [
+        0.04282582270469396,
+        -0.010897024418904763,
+        0.9847265317875379
+      ]
+    },
+    {
+      "id": "04",
+      "label": "Scene 04",
+      "gif": "static/gs/04/render.gif",
+      "inputs": [
+        "static/gs/04/input_images/view0_01_\u963f\u6d1b1_preprocessed.png",
+        "static/gs/04/input_images/view1_02_\u963f\u6d1b2_preprocessed.png",
+        "static/gs/04/input_images/view2_03_\u963f\u6d1b3_preprocessed.png",
+        "static/gs/04/input_images/view3_04_\u963f\u843d4_preprocessed.png"
+      ],
+      "cameras": "static/gs/04/cameras.json",
+      "noTto": "static/gs/04/gaussians_no_tto.ply",
+      "tto": "static/gs/04/gaussians_tto50.ply",
+      "centroid": [
+        -0.007697260980444763,
+        -0.035800490463000885,
+        1.0474068849199432
+      ]
+    },
+    {
+      "id": "05",
+      "label": "Scene 05",
+      "gif": "static/gs/05/render.gif",
+      "inputs": [
+        "static/gs/05/input_images/view0_frame_00001_preprocessed.png",
+        "static/gs/05/input_images/view10_frame_00053_preprocessed.png",
+        "static/gs/05/input_images/view1_frame_00005_preprocessed.png",
+        "static/gs/05/input_images/view2_frame_00011_preprocessed.png",
+        "static/gs/05/input_images/view3_frame_00017_preprocessed.png",
+        "static/gs/05/input_images/view4_frame_00022_preprocessed.png",
+        "static/gs/05/input_images/view5_frame_00029_preprocessed.png",
+        "static/gs/05/input_images/view6_frame_00034_preprocessed.png",
+        "static/gs/05/input_images/view7_frame_00039_preprocessed.png",
+        "static/gs/05/input_images/view8_frame_00046_preprocessed.png",
+        "static/gs/05/input_images/view9_frame_00049_preprocessed.png"
+      ],
+      "cameras": "static/gs/05/cameras.json",
+      "noTto": "static/gs/05/gaussians_no_tto.ply",
+      "tto": "static/gs/05/gaussians_tto50.ply",
+      "centroid": [
+        -0.14341664730371723,
+        -0.08194193519297747,
+        1.0628505124231828
+      ]
+    },
+    {
+      "id": "06",
+      "label": "Scene 06",
+      "gif": "static/gs/06/render.gif",
+      "inputs": [
+        "static/gs/06/input_images/view0_view0_1_preprocessed_preprocessed.png"
+      ],
+      "cameras": "static/gs/06/cameras.json",
+      "noTto": "static/gs/06/gaussians_no_tto.ply",
+      "tto": "static/gs/06/gaussians_tto50.ply",
+      "centroid": [
+        -0.07388120498607861,
+        0.023332234414092424,
+        0.9459799272488274
+      ]
+    },
+    {
+      "id": "07",
+      "label": "Scene 07",
+      "gif": "static/gs/07/render.gif",
+      "inputs": [
+        "static/gs/07/input_images/view0_frame_00014_preprocessed.png",
+        "static/gs/07/input_images/view1_frame_00022_preprocessed.png",
+        "static/gs/07/input_images/view2_frame_00033_preprocessed.png",
+        "static/gs/07/input_images/view3_frame_00051_preprocessed.png",
+        "static/gs/07/input_images/view4_frame_00067_preprocessed.png",
+        "static/gs/07/input_images/view5_frame_00091_preprocessed.png"
+      ],
+      "cameras": "static/gs/07/cameras.json",
+      "noTto": "static/gs/07/gaussians_no_tto.ply",
+      "tto": "static/gs/07/gaussians_tto50.ply",
+      "centroid": [
+        -0.07112296663977463,
+        0.024997855589631492,
+        0.9979232047088598
+      ]
+    },
+    {
+      "id": "08",
+      "label": "Scene 08",
+      "gif": "static/gs/08/render.gif",
+      "inputs": [
+        "static/gs/08/input_images/view0_frame_00264_preprocessed.png",
+        "static/gs/08/input_images/view1_frame_00272_preprocessed.png",
+        "static/gs/08/input_images/view2_frame_00282_preprocessed.png",
+        "static/gs/08/input_images/view3_frame_00288_preprocessed.png",
+        "static/gs/08/input_images/view4_frame_00302_preprocessed.png"
+      ],
+      "cameras": "static/gs/08/cameras.json",
+      "noTto": "static/gs/08/gaussians_no_tto.ply",
+      "tto": "static/gs/08/gaussians_tto50.ply",
+      "centroid": [
+        -0.3344232586579724,
+        -0.25513848590444715,
+        1.065624707766345
+      ]
+    }
+  ]
+}
