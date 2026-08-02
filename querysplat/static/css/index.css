@@ -82,6 +82,13 @@ body {
     margin: 8px 4px;
 }
 
+.model-icon {
+    width: 1.25em;
+    height: auto;
+    max-height: 1.25em;
+    display: block;
+}
+
 .dnerf {
   font-variant: small-caps;
 }
