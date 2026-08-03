@@ -1,6 +1,26 @@
 {
   "scenes": [
     {
+      "id": "01",
+      "label": "Scene 01",
+      "gif": "static/gs/01/render.gif",
+      "inputs": [
+        "static/gs/01/input_images/view0_01_DSC04110_preprocessed.png",
+        "static/gs/01/input_images/view1_02_DSC04112_preprocessed.png",
+        "static/gs/01/input_images/view2_03_DSC04113_preprocessed.png",
+        "static/gs/01/input_images/view3_04_DSC04108_preprocessed.png",
+        "static/gs/01/input_images/view4_05_DSC04109_preprocessed.png"
+      ],
+      "cameras": "static/gs/01/cameras.json",
+      "noTto": "static/gs/01/gaussians_no_tto.ply",
+      "tto": "static/gs/01/gaussians_tto50.ply",
+      "centroid": [
+        0.0447231255757308,
+        -0.011363682232458679,
+        0.9885702200486928
+      ]
+    },
+    {
       "id": "02",
       "label": "Scene 02",
       "gif": "static/gs/02/render.gif",
@@ -16,9 +36,9 @@
       "noTto": "static/gs/02/gaussians_no_tto.ply",
       "tto": "static/gs/02/gaussians_tto50.ply",
       "centroid": [
-        0.09727845616806409,
-        -0.039451228228119396,
-        1.140995752521401
+        0.09572021808321006,
+        -0.039606827580507785,
+        1.1375883460487826
       ]
     },
     {
@@ -26,19 +46,23 @@
       "label": "Scene 03",
       "gif": "static/gs/03/render.gif",
       "inputs": [
-        "static/gs/03/input_images/view0_01_DSC04110_preprocessed.png",
-        "static/gs/03/input_images/view1_02_DSC04112_preprocessed.png",
-        "static/gs/03/input_images/view2_03_DSC04113_preprocessed.png",
-        "static/gs/03/input_images/view3_04_DSC04108_preprocessed.png",
-        "static/gs/03/input_images/view4_05_DSC04109_preprocessed.png"
+        "static/gs/03/input_images/view0_view0_01_capture_01_2026-06-27T05-24-26-902Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view1_view1_02_capture_02_2026-06-27T05-24-28-100Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view2_view2_03_capture_03_2026-06-27T05-24-29-836Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view3_view3_04_capture_04_2026-06-27T05-24-31-721Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view4_view4_05_capture_05_2026-06-27T05-24-34-180Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view5_view5_06_capture_06_2026-06-27T05-24-36-356Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view6_view6_07_capture_07_2026-06-27T05-24-37-685Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view7_view7_08_capture_08_2026-06-27T05-24-40-827Z_preprocessed_preprocessed.png",
+        "static/gs/03/input_images/view8_view8_09_capture_09_2026-06-27T05-24-44-588Z_preprocessed_preprocessed.png"
       ],
       "cameras": "static/gs/03/cameras.json",
       "noTto": "static/gs/03/gaussians_no_tto.ply",
       "tto": "static/gs/03/gaussians_tto50.ply",
       "centroid": [
-        0.04282582270469396,
-        -0.010897024418904763,
-        0.9847265317875379
+        -0.04555649940601577,
+        -0.013138335295971871,
+        0.8779378645295013
       ]
     },
     {
@@ -55,9 +79,9 @@
       "noTto": "static/gs/04/gaussians_no_tto.ply",
       "tto": "static/gs/04/gaussians_tto50.ply",
       "centroid": [
-        -0.007697260980444763,
-        -0.035800490463000885,
-        1.0474068849199432
+        -0.008340377192931254,
+        -0.03849204594002579,
+        1.0517111318210117
       ]
     },
     {
@@ -81,9 +105,9 @@
       "noTto": "static/gs/05/gaussians_no_tto.ply",
       "tto": "static/gs/05/gaussians_tto50.ply",
       "centroid": [
-        -0.14341664730371723,
-        -0.08194193519297747,
-        1.0628505124231828
+        -0.1409766552162998,
+        -0.08093879733775718,
+        1.0608178287426535
       ]
     },
     {
@@ -97,9 +121,9 @@
       "noTto": "static/gs/06/gaussians_no_tto.ply",
       "tto": "static/gs/06/gaussians_tto50.ply",
       "centroid": [
-        -0.07388120498607861,
-        0.023332234414092424,
-        0.9459799272488274
+        -0.07607374130453928,
+        0.014037332412633573,
+        0.9563799331659235
       ]
     },
     {
@@ -118,9 +142,9 @@
       "noTto": "static/gs/07/gaussians_no_tto.ply",
       "tto": "static/gs/07/gaussians_tto50.ply",
       "centroid": [
-        -0.07112296663977463,
-        0.024997855589631492,
-        0.9979232047088598
+        -0.07442005453164782,
+        0.026193587779754036,
+        0.9988202926429367
       ]
     },
     {
@@ -138,9 +162,103 @@
       "noTto": "static/gs/08/gaussians_no_tto.ply",
       "tto": "static/gs/08/gaussians_tto50.ply",
       "centroid": [
-        -0.3344232586579724,
-        -0.25513848590444715,
-        1.065624707766345
+        -0.34002445598074743,
+        -0.25953662435484715,
+        1.0621799075481002
+      ]
+    },
+    {
+      "id": "09",
+      "label": "Scene 09",
+      "gif": "static/gs/09/render.gif",
+      "inputs": [
+        "static/gs/09/input_images/view0_view0_01_capture_01_2026-06-26T09-59-24-103Z_preprocessed_preprocessed.png",
+        "static/gs/09/input_images/view1_view1_02_capture_02_2026-06-26T09-59-27-403Z_preprocessed_preprocessed.png",
+        "static/gs/09/input_images/view2_view2_03_capture_03_2026-06-26T09-59-29-705Z_preprocessed_preprocessed.png"
+      ],
+      "cameras": "static/gs/09/cameras.json",
+      "noTto": "static/gs/09/gaussians_no_tto.ply",
+      "tto": "static/gs/09/gaussians_tto50.ply",
+      "centroid": [
+        0.033703151534834025,
+        0.012980326903889089,
+        0.8682401060393048
+      ]
+    },
+    {
+      "id": "10",
+      "label": "Scene 10",
+      "gif": "static/gs/10/render.gif",
+      "inputs": [
+        "static/gs/10/input_images/view0_view0_01_0BF392E0622AF64665D295879E0DD671_preprocessed_preprocessed.png",
+        "static/gs/10/input_images/view1_view1_02_5838FA3D57089E7E984ACA63EAF5082B_preprocessed_preprocessed.png",
+        "static/gs/10/input_images/view2_view2_03_E3F173BA74D9771B875425A52A4451B9_preprocessed_preprocessed.png",
+        "static/gs/10/input_images/view3_view3_04_F3A29E8332E4AE7D4650F9A3362481C3_preprocessed_preprocessed.png",
+        "static/gs/10/input_images/view4_view4_05_FF72EE6E7AD2688B92AFF0DF7B11C08C_preprocessed_preprocessed.png"
+      ],
+      "cameras": "static/gs/10/cameras.json",
+      "noTto": "static/gs/10/gaussians_no_tto.ply",
+      "tto": "static/gs/10/gaussians_tto50.ply",
+      "centroid": [
+        -0.08060673752423855,
+        -0.10058541995307181,
+        0.8211526218510664
+      ]
+    },
+    {
+      "id": "11",
+      "label": "Scene 11",
+      "gif": "static/gs/11/render.gif",
+      "inputs": [
+        "static/gs/11/input_images/view0_view0_01_1DBD3C96E8A30519E3AB4B687C8C3526_preprocessed_preprocessed.png",
+        "static/gs/11/input_images/view1_view1_02_1E8385F802D8ED843D45C983966F010E_preprocessed_preprocessed.png",
+        "static/gs/11/input_images/view2_view2_03_10A8007DD185469ABA42F1C48747D271_preprocessed_preprocessed.png",
+        "static/gs/11/input_images/view3_view3_04_098B7A68D13C5230F9ECAFD741D9188E_preprocessed_preprocessed.png",
+        "static/gs/11/input_images/view4_view4_05_208DE7420D91548FD029CCE9D0D8E94A_preprocessed_preprocessed.png",
+        "static/gs/11/input_images/view5_view5_06_8438BF772C7737E9AAA837FCBBF88B36_preprocessed_preprocessed.png"
+      ],
+      "cameras": "static/gs/11/cameras.json",
+      "noTto": "static/gs/11/gaussians_no_tto.ply",
+      "tto": "static/gs/11/gaussians_tto50.ply",
+      "centroid": [
+        0.029994141084018752,
+        -0.0001319424493664375,
+        0.8531274760220608
+      ]
+    },
+    {
+      "id": "12",
+      "label": "Scene 12",
+      "gif": "static/gs/12/render.gif",
+      "inputs": [
+        "static/gs/12/input_images/view0_view0_01_capture_01_2026-06-26T11-20-07-267Z_preprocessed_preprocessed.png",
+        "static/gs/12/input_images/view1_view1_02_capture_02_2026-06-26T11-20-17-247Z_preprocessed_preprocessed.png",
+        "static/gs/12/input_images/view2_view2_03_capture_03_2026-06-26T11-20-28-523Z_preprocessed_preprocessed.png"
+      ],
+      "cameras": "static/gs/12/cameras.json",
+      "noTto": "static/gs/12/gaussians_no_tto.ply",
+      "tto": "static/gs/12/gaussians_tto50.ply",
+      "centroid": [
+        -0.0972447260306745,
+        -0.00164337688517248,
+        0.9096008200195208
+      ]
+    },
+    {
+      "id": "13",
+      "label": "Scene 13",
+      "gif": "static/gs/13/render.gif",
+      "inputs": [
+        "static/gs/13/input_images/view0_view0_01_image_preprocessed_preprocessed.png",
+        "static/gs/13/input_images/view1_view1_02_image_preprocessed_preprocessed.png"
+      ],
+      "cameras": "static/gs/13/cameras.json",
+      "noTto": "static/gs/13/gaussians_no_tto.ply",
+      "tto": "static/gs/13/gaussians_tto50.ply",
+      "centroid": [
+        0.005331426890056967,
+        0.11493330372059417,
+        0.8727195892414644
       ]
     }
   ]

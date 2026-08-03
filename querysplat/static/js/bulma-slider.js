@@ -1,3 +1,9 @@
+// Copyright (c) 2026 Inspatio. All rights reserved.
+//
+// This software and its associated documentation are proprietary to Inspatio.
+// Unauthorized copying, modification, distribution, or use is prohibited
+// without prior written permission from Inspatio.
+
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();

@@ -76,7 +76,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--opacity-threshold",
         type=float,
-        default=0.02,
+        default=0.05,
         help="Minimum opacity for exported Gaussians (default: 0.02).",
     )
     parser.add_argument("--overwrite", action="store_true")
