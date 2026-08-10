@@ -15,9 +15,9 @@
       "noTto": "static/gs/01/gaussians_no_tto.ply",
       "tto": "static/gs/01/gaussians_tto50.ply",
       "centroid": [
-        0.0447231255757308,
-        -0.011363682232458679,
-        0.9885702200486928
+        0.05018959330428388,
+        -0.01575530965471063,
+        0.9798346429195792
       ]
     },
     {
@@ -36,9 +36,9 @@
       "noTto": "static/gs/02/gaussians_no_tto.ply",
       "tto": "static/gs/02/gaussians_tto50.ply",
       "centroid": [
-        0.09572021808321006,
-        -0.039606827580507785,
-        1.1375883460487826
+        0.12179193378811884,
+        -0.04690300790728262,
+        1.1597762504193911
       ]
     },
     {
@@ -60,9 +60,9 @@
       "noTto": "static/gs/03/gaussians_no_tto.ply",
       "tto": "static/gs/03/gaussians_tto50.ply",
       "centroid": [
-        -0.04555649940601577,
-        -0.013138335295971871,
-        0.8779378645295013
+        -0.031708639209441496,
+        -0.04585838225320995,
+        0.9079167006813723
       ]
     },
     {
@@ -79,9 +79,9 @@
       "noTto": "static/gs/04/gaussians_no_tto.ply",
       "tto": "static/gs/04/gaussians_tto50.ply",
       "centroid": [
-        -0.008340377192931254,
-        -0.03849204594002579,
-        1.0517111318210117
+        0.00668028892695358,
+        -0.07269903036283759,
+        1.0998729444391282
       ]
     },
     {
@@ -105,9 +105,9 @@
       "noTto": "static/gs/05/gaussians_no_tto.ply",
       "tto": "static/gs/05/gaussians_tto50.ply",
       "centroid": [
-        -0.1409766552162998,
-        -0.08093879733775718,
-        1.0608178287426535
+        -0.1397676568543481,
+        -0.09127798599405221,
+        1.0641101095966221
       ]
     },
     {
@@ -121,9 +121,9 @@
       "noTto": "static/gs/06/gaussians_no_tto.ply",
       "tto": "static/gs/06/gaussians_tto50.ply",
       "centroid": [
-        -0.07607374130453928,
-        0.014037332412633573,
-        0.9563799331659235
+        -0.07868269664433554,
+        0.02203617747193721,
+        0.9566242634728077
       ]
     },
     {
@@ -142,9 +142,9 @@
       "noTto": "static/gs/07/gaussians_no_tto.ply",
       "tto": "static/gs/07/gaussians_tto50.ply",
       "centroid": [
-        -0.07442005453164782,
-        0.026193587779754036,
-        0.9988202926429367
+        -0.06469056703315279,
+        0.008262181133057347,
+        1.0258010242326043
       ]
     },
     {
@@ -162,9 +162,9 @@
       "noTto": "static/gs/08/gaussians_no_tto.ply",
       "tto": "static/gs/08/gaussians_tto50.ply",
       "centroid": [
-        -0.34002445598074743,
-        -0.25953662435484715,
-        1.0621799075481002
+        -0.36501058100380507,
+        -0.28606102625760504,
+        1.102131161586019
       ]
     },
     {
@@ -180,9 +180,9 @@
       "noTto": "static/gs/09/gaussians_no_tto.ply",
       "tto": "static/gs/09/gaussians_tto50.ply",
       "centroid": [
-        0.033703151534834025,
-        0.012980326903889089,
-        0.8682401060393048
+        0.04088922073524119,
+        -0.001059347114879952,
+        0.8954362953934771
       ]
     },
     {
@@ -200,9 +200,9 @@
       "noTto": "static/gs/10/gaussians_no_tto.ply",
       "tto": "static/gs/10/gaussians_tto50.ply",
       "centroid": [
-        -0.08060673752423855,
-        -0.10058541995307181,
-        0.8211526218510664
+        -0.10801801778709233,
+        -0.11712893298280325,
+        0.8490277438960195
       ]
     },
     {
@@ -221,9 +221,9 @@
       "noTto": "static/gs/11/gaussians_no_tto.ply",
       "tto": "static/gs/11/gaussians_tto50.ply",
       "centroid": [
-        0.029994141084018752,
-        -0.0001319424493664375,
-        0.8531274760220608
+        0.03656063987004073,
+        -0.020677301467404232,
+        0.8718914647533383
       ]
     },
     {
@@ -239,9 +239,9 @@
       "noTto": "static/gs/12/gaussians_no_tto.ply",
       "tto": "static/gs/12/gaussians_tto50.ply",
       "centroid": [
-        -0.0972447260306745,
-        -0.00164337688517248,
-        0.9096008200195208
+        -0.09601358722242677,
+        -0.019604628476838633,
+        0.9365800777735678
       ]
     },
     {
@@ -256,9 +256,30 @@
       "noTto": "static/gs/13/gaussians_no_tto.ply",
       "tto": "static/gs/13/gaussians_tto50.ply",
       "centroid": [
-        0.005331426890056967,
-        0.11493330372059417,
-        0.8727195892414644
+        0.014346955233854073,
+        0.12100629438387947,
+        0.8784353904820459
+      ]
+    },
+    {
+      "id": "14",
+      "label": "Scene 14",
+      "gif": "static/gs/14/render.gif",
+      "inputs": [
+        "static/gs/14/input_images/view0_01_\u6bd5\u4e1a\u71671_preprocessed.png",
+        "static/gs/14/input_images/view1_02_\u6bd5\u4e1a\u71672_preprocessed.png",
+        "static/gs/14/input_images/view2_03_\u6bd5\u4e1a\u71673_preprocessed.png",
+        "static/gs/14/input_images/view3_04_\u6bd5\u4e1a\u71674_preprocessed.png",
+        "static/gs/14/input_images/view4_05_\u6bd5\u4e1a\u71675_preprocessed.png",
+        "static/gs/14/input_images/view5_06_\u6bd5\u4e1a\u71676_preprocessed.png"
+      ],
+      "cameras": "static/gs/14/cameras.json",
+      "noTto": "static/gs/14/gaussians_no_tto.ply",
+      "tto": "static/gs/14/gaussians_tto50.ply",
+      "centroid": [
+        0.004514901026735734,
+        0.07251467526562715,
+        0.8683108736714463
       ]
     }
   ]
