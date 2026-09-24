@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="InSpatio-World 1.5, scene roaming, next-view prediction, spatial intelligence, embodied intelligence">
+    <meta name="description" content="InSpatio-World 1.5 supports video, single-image, multi-image, and panorama inputs for consistent exploration across large viewpoint changes and time.">
+    <title>InSpatio-World 1.5 — Beyond the Frame, Into the World</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+        <div class="nav-content">
+            <div class="nav-logo">InSpatio-World</div>
+        </div>
+    </nav>
+
+    <button class="theme-toggle-floating" id="themeToggle" type="button" aria-label="Toggle light and dark theme">
+        <span aria-hidden="true">🌙</span>
+    </button>
+
+    <header class="hero" id="top">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main">INSPATIO-WORLD 1.5</span>
+                <span class="hero-title-third">Beyond the <span class="hero-title-accent">Frame.</span></span>
+                <span class="hero-title-third">Into the <span class="hero-title-accent">World.</span></span>
+            </h1>
+            <div style="margin-top: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <div class="enhanced-video">
+                    <div class="video-wrapper">
+                        <video src="static/videos/9.24-final-web.mp4" poster="static/images/9.24-final-poster-1s.jpg" preload="none" controls loop playsinline aria-label="InSpatio-World 1.5 demo video"></video>
+                        <div class="video-play-button">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://github.com/inspatio" target="_blank" rel="noopener noreferrer" class="cta-button">Code</a>
+                <a href="https://huggingface.co/inspatio/world-1.5" target="_blank" rel="noopener noreferrer" class="cta-button">Hugging Face</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="quick-nav" aria-label="On-page navigation">
+        <div class="quick-nav-content">
+            <a href="#scene-roaming" class="quick-nav-link"><span class="quick-nav-number">01</span><span class="quick-nav-text">Scene Roaming</span></a>
+            <a href="#next-view" class="quick-nav-link"><span class="quick-nav-number">02</span><span class="quick-nav-text">Next-View Prediction</span></a>
+            <a href="#multiple-inputs" class="quick-nav-link"><span class="quick-nav-number">03</span><span class="quick-nav-text">Multiple Inputs</span></a>
+            <a href="#closing" class="quick-nav-link"><span class="quick-nav-number">04</span><span class="quick-nav-text">Looking Ahead</span></a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section intro-description" id="intro">
+            <div class="reveal">
+                <div class="quote-box" style="padding: 20px 32px;">
+                    <p style="font-size: 18px; font-weight: 400; font-style: italic; margin-bottom: 0; line-height: 1.3;">From Next-View Prediction to Spatial Intelligence</p>
+                </div>
+                <div style="margin-top: 24px;">
+                    <p>InSpatio-World 1.0 began with a simple idea: build a world beyond the original camera view from a single video. Today, we introduce InSpatio-World 1.5. It now accepts a single image, an image set, or a panorama, enabling much wider viewpoint changes while maintaining scene consistency. For cinematography, immersive experiences, and research in spatial and embodied intelligence, InSpatio-World 1.5 opens up new possibilities for developers and creators.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="scene-roaming">
+            <div class="numbered-section reveal">
+                <div class="section-number" aria-hidden="true">1</div>
+                <div class="section-content">
+                    <h2>Real-Time Scene Roaming</h2>
+                    <div class="quote-box" style="padding: 20px 32px;"><p style="margin-bottom: 0;">Starting from a single image, explore a scene from a wide range of viewpoints.</p></div>
+                    <div class="possibilities-grid">
+                        <div class="possibility-item"><div class="possibility-number">1</div><div class="possibility-content"><h3>Beyond the Original View</h3><p>Move the camera into the scene and reveal areas hidden from the original viewpoint.</p></div></div>
+                        <div class="possibility-item"><div class="possibility-number">2</div><div class="possibility-content"><h3>Realism and Style Consistency</h3><p>Even under large viewpoint changes, newly revealed spaces remain believable and visually consistent with the source image.</p></div></div>
+                        <div class="possibility-item"><div class="possibility-number">3</div><div class="possibility-content"><h3>Spatial Coherence</h3><p>Maintain a coherent spatial structure through sweeping camera moves so every new view feels grounded in the same scene.</p></div></div>
+                    </div>
+                    <h3>Demo Videos</h3>
+                    <div class="video-grid">
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/scene_corridor.mp4" poster="static/images/scene_corridor-poster-1s.jpg" preload="none" controls loop muted playsinline aria-label="Corridor"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Corridor</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/scene_castle.mp4" poster="static/images/scene_castle-poster-1s.jpg" preload="none" controls loop muted playsinline aria-label="Castle"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Castle</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/scene_bridge.mp4" poster="static/images/scene_bridge-poster-1s.jpg" preload="none" controls loop muted playsinline aria-label="Bridge"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Bridge</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/scene_wave_bridge_wide.mp4" poster="static/images/scene_wave_bridge_wide.jpg" preload="none" controls loop muted playsinline aria-label="Cloud Palace"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Cloud Palace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="next-view">
+            <div class="numbered-section reveal">
+                <div class="section-number" aria-hidden="true">2</div>
+                <div class="section-content">
+                    <h2>Next-View Prediction in Dynamic Worlds</h2>
+                    <div class="quote-box" style="padding: 20px 32px;"><p style="margin-bottom: 0;">With video input, InSpatio-World 1.5 enables deeper exploration across space and time.</p></div>
+                    <div class="possibilities-grid">
+                        <div class="possibility-item"><div class="possibility-number">1</div><div class="possibility-content"><h3>Spatiotemporal Exploration</h3><p>Move the viewpoint freely through the scene and choose when to observe as the action unfolds.</p></div></div>
+                        <div class="possibility-item"><div class="possibility-number">2</div><div class="possibility-content"><h3>Next-Viewpoint Prediction</h3><p>Training the model to predict novel views from large-scale data captured in dynamic real-world scenes strengthens its spatial understanding and its ability to reason about how scenes evolve over time.</p></div></div>
+                        <div class="possibility-item"><div class="possibility-number">3</div><div class="possibility-content"><h3>Embodied Intelligence</h3><p>This capability supports cinematic camera work, viewpoint reasoning for spatial intelligence, and dynamic environment modeling for embodied agents.</p></div></div>
+                    </div>
+                    <h3>Demo Videos</h3>
+                    <div class="video-stack">
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/dynamic_oranges_combined.mp4" poster="static/images/dynamic_oranges_combined.jpg" preload="none" controls loop muted playsinline aria-label="Rolling oranges demo video"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Rolling Oranges</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/dynamic_boat_combined.mp4" poster="static/images/dynamic_boat_combined.jpg" preload="none" controls loop muted playsinline aria-label="Forest boat ride demo video"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Forest Boat Ride</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/dynamic_rain_combined.mp4" poster="static/images/dynamic_rain_combined.jpg" preload="none" controls loop muted playsinline aria-label="Rainy-night cottage demo video"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Rainy-Night Cottage</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/dynamic_tornado_combined.mp4" poster="static/images/dynamic_tornado_combined.jpg" preload="none" controls loop muted playsinline aria-label="Desert tornado demo video"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Desert Tornado</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/dynamic_flour_combined.mp4" poster="static/images/dynamic_flour_combined.jpg" preload="none" controls loop muted playsinline aria-label="Flour dust demo video"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Flour Dust</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="multiple-inputs">
+            <div class="numbered-section reveal">
+                <div class="section-number" aria-hidden="true">3</div>
+                <div class="section-content">
+                    <h2>One Model for Multiple Input Types</h2>
+                    <div class="quote-box" style="padding: 20px 32px;"><p style="margin-bottom: 0;">From image sets to panoramas, InSpatio-World 1.5 turns varied source material into explorable spaces.</p></div>
+                    <div class="possibilities-grid">
+                        <div class="possibility-item"><div class="possibility-number">1</div><div class="possibility-content"><h3>Flexible Inputs</h3><p>The model accepts a single image, an image set, a panorama, or a video, enabling spatial exploration from a wide range of source material.</p></div></div>
+                        <div class="possibility-item"><div class="possibility-number">2</div><div class="possibility-content"><h3>Bullet-Time Creation</h3><p>Start with multiple synchronized images and design a camera path around the subject to create a smooth, coherent bullet-time sequence.</p></div></div>
+                        <div class="possibility-item"><div class="possibility-number">3</div><div class="possibility-content"><h3>Generation Consistency</h3><p>The model preserves subject identity, spatial structure, and scene details as the camera moves dramatically and time advances.</p></div></div>
+                    </div>
+                    <h3>Demo Videos</h3>
+                    <div class="video-grid">
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/input_orbit.mp4" poster="static/images/input_orbit-poster-1s.png" preload="none" controls loop muted playsinline aria-label="Multi-image strawberry demo"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Multi-image · Strawberry</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/input_inference.mp4" poster="static/images/input_inference-poster-1s.png" preload="none" controls loop muted playsinline aria-label="Multi-image smartphone demo"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Multi-image · Smartphone</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/input_generated.mp4" poster="static/images/input_generated-poster-1s.png" preload="none" controls loop muted playsinline aria-label="Celestial Palace panorama demo"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Panorama · Celestial Palace</div>
+                        </div>
+                        <div class="enhanced-video">
+                            <div class="video-wrapper">
+                                <video src="static/videos/input_bookstore.mp4" poster="static/images/input_bookstore-poster-1s.png" preload="none" controls loop muted playsinline aria-label="Bookstore panorama demo"></video>
+                                <div class="video-play-button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+                            </div>
+                            <div class="video-caption">Panorama · Bookstore</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="closing">
+            <div class="numbered-section reveal">
+                <div class="section-number" aria-hidden="true">4</div>
+                <div class="section-content">
+                    <h2>Looking Ahead</h2>
+                    <p>Multiple input options let exploration begin with almost any source. Wider viewpoint changes expand what can be observed, while strong consistency supports continuous exploration across space and time. InSpatio-World 1.5 is now available to try, with its code released as open source. We invite researchers, developers, and creators to build on these capabilities and help shape the next generation of content creation, immersive experiences, and spatial intelligence.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>
